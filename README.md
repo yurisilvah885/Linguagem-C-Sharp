@@ -1,2 +1,0 @@
-# uscs
-atividades USCS
