@@ -13,3 +13,27 @@ class Conta
             this.saldo = saldo_incial;
         }
     }
+    
+    
+public partial class Form1 : Form
+    {
+        Conta c1;
+        public Form1()
+        {
+            InitializeComponent();
+            c1 = new Conta(1000);
+            txtSaldo.Text = c1.saldo.ToString();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSacar_Click(object sender, EventArgs e)
+        {
+            int valor_do_saque = int.Parse(txtSaque.Text);
+            c1.Sacar(valor_do_saque);
+            txtSaldo.Text = c1.saldo.ToString();
+        }
+    }
