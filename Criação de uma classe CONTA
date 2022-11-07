@@ -1,0 +1,15 @@
+class Conta
+    {
+        public int saldo;
+
+        public void Sacar (int val_saque)
+        {
+            this.saldo = this.saldo - val_saque;
+        }
+
+
+        public Conta(int saldo_incial)
+        {
+            this.saldo = saldo_incial;
+        }
+    }
