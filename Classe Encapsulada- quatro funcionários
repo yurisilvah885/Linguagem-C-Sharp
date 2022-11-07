@@ -1,0 +1,99 @@
+namespace exercicio1
+{
+    class Funcionario
+    {
+        private string nome;
+        private int matricula;
+        private float salario;
+        private double media;
+
+        private Funcionario(string nome, int matricula, float salario, double media)
+        {
+            this.nome = nome;
+            this.matricula = matricula;
+            this.salario = salario;
+        }
+
+        public Funcionario()
+        {
+        }
+
+        public void setNome(String nome)
+        {
+            this.nome = nome;
+        }
+
+        public String getNome()
+        {
+            return (this.nome);
+        }
+
+        // get e set idade
+        public void setMatricula(int matricula) { this.matricula = matricula; }
+        public int getMatricula() { return this.matricula; }
+
+        // get e set salario
+        public void setSalario(float salario) { this.salario = salario; }
+        public float getSalario() { return this.salario; }
+
+        // get e set media
+        public void setMedia(double media) { this.media = media; }
+        public double getMedia() { return this.media; }
+    }
+
+}
+  
+
+
+
+namespace exercicio1
+
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            double media1, soma1;
+            media1= (1200 + 900 + 1300 + 1500);
+            soma1 = (media1 / 5);
+
+
+
+                Funcionario p1 = new Funcionario();
+                Funcionario p2 = new Funcionario();
+                Funcionario p3 = new Funcionario();
+                Funcionario p4 = new Funcionario();
+
+                p1.setNome("Ana");
+                p2.setNome("Douglas");
+                p3.setNome("Lucas");
+                p4.setNome("Claudio");
+
+                p1.setMatricula(756);
+                p2.setMatricula (765);
+                p3.setMatricula(124);
+                p4.setMatricula(769);
+
+
+                p1.setSalario(1200);
+                p2.setSalario(900);
+                p3.setSalario(1300);
+                p4.setSalario(1500);
+
+                Console.WriteLine(p1.getNome() + " " + p1.getMatricula() + " " + p1.getSalario());
+                Console.WriteLine(p2.getNome() + " " + p2.getMatricula() + " " + p2.getSalario());
+                Console.WriteLine(p3.getNome() + " " + p3.getMatricula() + " " + p3.getSalario());
+                Console.WriteLine(p4.getNome() + " " + p4.getMatricula() + " " + p4.getSalario());
+                
+                
+                Console.ReadKey();
+
+            
+
+            }
+        }
+    }
+
+
